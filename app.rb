@@ -65,21 +65,21 @@ class HangpersonApp < Sinatra::Base
       flash[:message] = "You lose (7 tries)!!"
       redirect '/lose'
     else
-      redirect '/guess'
+     # redirect '/guess'
     end
-    #erb :show # You may change/remove this line
+    erb :show # You may change/remove this line
   end
   
   get '/win' do
     ### YOUR CODE HERE ###
     erb :win # You may change/remove this line
-    redirect '/create'
+    #redirect '/create'
   end
   
   get '/lose' do
     ### YOUR CODE HERE ###
     erb :lose # You may change/remove this line
-    redirect '/create'
+    #redirect '/create'
   end
   
 end
