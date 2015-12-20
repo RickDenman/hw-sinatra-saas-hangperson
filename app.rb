@@ -65,18 +65,18 @@ class HangpersonApp < Sinatra::Base
     else
      # redirect '/guess'
     end
-    erb :guess # You may change/remove this line
+    erb:guess # You may change/remove this line
   end
   
   get '/win' do
     ### YOUR CODE HERE ###
-    erb :win # You may change/remove this line
+    erb:win # You may change/remove this line
     #redirect '/create'
   end
   
   get '/lose' do
     ### YOUR CODE HERE ###
-    erb :lose # You may change/remove this line
+    erb:lose # You may change/remove this line
     #redirect '/create'
   end
   
