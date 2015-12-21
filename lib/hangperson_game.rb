@@ -54,7 +54,7 @@ class HangpersonGame
   end
   
   def check_win_or_lose
-    if @guesses.size + @wrong_guesses.size == 7 
+    if @wrong_guesses.size == 7 
       return :lose
     else
       displa = word_with_guesses()
